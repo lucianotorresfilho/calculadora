@@ -15,5 +15,8 @@ function calcula(){
     let percent = (compra + frete + impostos + outrosCustos + comissao) * (margem/100);
     let resultado = compra + frete + impostos + outrosCustos + comissao + percent;
     const formatado = resultado.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    let custo = resultado - percent;
+    const formatadoCusto = custo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     document.getElementById("resultado").innerHTML = formatado;
+    document.getElementById("custo").innerHTML = formatadoCusto;
 }

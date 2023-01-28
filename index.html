@@ -10,26 +10,25 @@
 <body>
     <div class="page">
         <h2>Calculadora de Preços</h2>
-        <span>by: Luciano Torres Filho</span>
         <div class="card">
             <label for="compra">Preço de compra da unidade $</label> 
-            <input type="number" name="compra" id="compra" value="0.0">
+            <input type="number" name="compra" id="compra" value="0">
             <br>
 
             <label for="frete">Custo do frete $</label>
-            <input type="number" name="frete" id="frete" value="0.0">
+            <input type="number" name="frete" id="frete" value="0">
             <br>
 
             <label for="impostos">Custo dos impostos $</label>
-            <input type="number" name="frete" id="impostos" value="0.0">
+            <input type="number" name="frete" id="impostos" value="0">
             <br>
 
             <label for="outrosCustos">Outros custos$</label>
-            <input type="number" name="outrosCustos" id="outrosCustos" value="0.0">
+            <input type="number" name="outrosCustos" id="outrosCustos" value="0">
             <br>
 
             <label for="comissao">Valor da comissão $</label>
-            <input type="number" name="comissao" id="comissao" value="0.0">
+            <input type="number" name="comissao" id="comissao" value="0">
             <br>
 
             <label for="margem">Taxa de lucro %</label>
@@ -41,8 +40,10 @@
         <div class="resultado">
             <p>O preço sugerido para seu produto é:</p>
             <p id="resultado">R$ 0,00</p>
+            <p>O <strong>custo</strong> do seu produto é de <span id="custo">R$</span></p>
         </div>
     </div>
+    <span id="versao">versão: 1.1.0 - 28/01/2023</span>
     <script src="./script.js"></script>
 </body>
 </html

@@ -13,8 +13,7 @@ body{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    max-width: 70vw;
-    min-width: 50vw;
+    width: 400px;
     margin: 0 auto;
     border: solid 1px rgb(203, 199, 199);
     border-radius: 10px;
@@ -23,10 +22,10 @@ body{
 
 input{
     border: none;
+    border-radius: 2px;
     padding: 5px;
     text-align: center;
-    max-width: 50vw;
-    min-width: 50vw;
+    width: 200px;
     margin: 0 auto;
     /*display: flex center;*/
 }
@@ -55,4 +54,16 @@ button{
 button:hover{
     box-shadow: 1px 1px black;
     transition: 0.4s;
+}
+
+#versao{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: small;
+    color: rgb(133, 133, 137);
+}
+
+#custo{
+    font-weight: 700;
 }
