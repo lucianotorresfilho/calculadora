@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de preço</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <h2>Calculadora de Preços</h2>
+        <h3>Posto São Bento</h3>
+        <div class="card">
+            <label for="compra">Preço de compra da unidade $</label> 
+            <input type="number" name="compra" id="compra" value="0.0">
+            <br>
+
+            <label for="frete">Custo do frete $</label>
+            <input type="number" name="frete" id="frete" value="0.0">
+            <br>
+
+            <label for="impostos">Custo dos impostos $</label>
+            <input type="number" name="frete" id="impostos" value="0.0">
+            <br>
+
+            <label for="outrosCustos">Outros custos$</label>
+            <input type="number" name="outrosCustos" id="outrosCustos" value="0.0">
+            <br>
+
+            <label for="comissao">Valor da comissão $</label>
+            <input type="number" name="comissao" id="comissao" value="0.0">
+            <br>
+
+            <label for="margem">Taxa de lucro %</label>
+            <input type="number" name="margem" id="margem" value="10">
+            <br>
+
+            <button id="botao" onclick="calcula()">Calcular</button>
+        </div>
+        <div class="resultado">
+            <p>O preço sugerido para seu produto é:</p>
+            <p id="resultado">R$ 0,00</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html
